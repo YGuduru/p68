@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthday wishes</title>
+<link rel="stylesheet" href="style.css">
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body class="body_backgorund" onload="new_image()">
+	<center>
+		<br><br>
+		<canvas width="600" height="400" id="myCanvas">
+
+		</canvas>
+		#myCanvas
+		{
+			border-:10px;
+			background-color:10px;
+			border-style:ridge;
+			border-color
+		}
+		<canvas width="600" height="400" id ="myCanvas">
+
+		</canvas>
+		<!--- Create canvas --->
+		<br>
+		#myCanvas
+		{
+			border-width:10px;
+			background-color:white;
+			border-style:ridge;
+			border-color:darkviolet;
+		}
+		 function new_image()
+		 {
+			fabric.Image.fromURL('BirthdayImage.jpg', function(Img)){
+				block_image_object=Img;
+
+				block_image_object.scaleToWidth(700);
+				block_image_object.scaleToHeight(510);
+				top:0;
+				left:0
+			};
+			canvas.add(block_image_object);
+		 };
+		<!--- Create Bootstrap button --->
+	</center>
+	<audio id="myAudio" src="bdayaudio.mp3"></audio>
+	<script src="main.js"></script>
+</body>
+</html>
+<botton class="btn btn-warning btn-lg"
+onclick="playsound()"> Dear Mom</botton>
